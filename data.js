@@ -40,8 +40,8 @@ var people = [
     githubUsername: 'johnidso'
   },
   {
-    name: 'Matthew',
-    githubUsername: 'matthewbuoc'
+    name: 'Stefan',
+    githubUsername: 'stefenmenzel'
   },
   {
     name: 'Meghan',
@@ -52,15 +52,11 @@ var people = [
     githubUsername: 'tadugan'
   },
   {
-    name: 'Steve',
-    githubUsername: 'stevesavstrom'
+    name: 'Rachel',
+    githubUsername: 'rschoenmann'
   },
   {
-    name: 'Steve',
-    githubUsername: 'stevesavstrom'
-  },
-  {
-    name: 'Steve',
-    githubUsername: 'stevesavstrom'
+    name: 'Konou',
+    githubUsername: 'konouvang'
   },
 ];
