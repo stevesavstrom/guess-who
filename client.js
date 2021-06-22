@@ -1,27 +1,41 @@
 console.log('Here are all the available people:', people);
 
+let randNum = -1;
+
 $(document).ready(readyNow);
 
 function readyNow(){
 loadImages();
 randomPerson();
+$("#gameboard").on("click", "div", clickPhoto);
+// click event listener
 }
 
 // Load images on DOM when page loads
 function loadImages() {
 	for(let person of people)
-	$('#gameboard').append(`<img src="https://github.com/${person.githubUsername}.png?size=250">`)
+	$('#gameboard').append(`<div class="grid" id="${person.name}"><img src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}"></div>`)
 }
 
 // Random number function (provided)
 function randomNumber(min, max){
     return Math.floor(Math.random() * (1 + max - min) + min);
 }
-console.log(randomNumber(0, 14));
 
+// Generate random person and append into #randomName
 function randomPerson(){
-// generate random person and append into #newName
-$('#randomName').append(people[randomNumber(0, 14)].name)
+	randNum = randomNumber(0, people.length - 1);
+	$('#randomName').append(people[randNum].name);
+	console.log(randNum);
+}
+
+// Guess and check by clicking on the photo
+function clickPhoto(){
+	if(this.id === people[randNum].name){
+		alert("Nice job! You found me!");
+	} else {
+		alert("Try again!");
+	}
 }
 
 

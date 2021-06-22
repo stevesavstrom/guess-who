@@ -26,10 +26,10 @@ function randomNumber(min, max){
 
 ## Game Logic
 
-- If the player clicks on the correct person
+[X] If the player clicks on the correct person
     - give them a success message.
     - Prompt the player to pick another person randomly and let them keep playing.
-- If they pick the wrong person
+[X] If they pick the wrong person
     - give them an error message.
     - allow them to try again.
 
