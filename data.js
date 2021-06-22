@@ -28,12 +28,12 @@ var people = [
     githubUsername: 'christopher-black'
   },
   {
-    name: 'Steve',
-    githubUsername: 'stevesavstrom'
+    name: 'Joshua',
+    githubUsername: 'JoshuaDavidOren'
   },
   {
-    name: 'Duy',
-    githubUsername: 'DuyDao-Dev'
+    name: 'Jose',
+    githubUsername: 'rubioz310'
   },
   {
     name: 'John',

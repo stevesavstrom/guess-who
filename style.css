@@ -1,9 +1,12 @@
 body {
 	font-family: Helvetica, sans-serif;
+	background-color:firebrick;
 }
 
 h2 {
 	font-size: 30px;
+	color: white;
+	text-align: center;
 }
 
 .grid{
@@ -12,8 +15,12 @@ display: inline;
 padding: 3px;
 }
 
+.profile{
+	border-radius: 10px;
+}
+
 .guesswho{
-	width: 300px;
+	width: 400px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;

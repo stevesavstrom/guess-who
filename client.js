@@ -6,6 +6,7 @@ let randNum = -1;
 $(document).ready(readyNow);
 
 function readyNow(){
+shuffleArray(people);
 loadImages();
 randomPerson();
 // Click event listener
@@ -16,7 +17,7 @@ $("#gameboard").on("click", "div", clickPhoto);
 function loadImages() {
 	// loop through data.js array and append each photo by Github username to DOM
 	for(let person of people)
-	$('#gameboard').append(`<div class="grid" id="${person.name}"><img src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}"></div>`)
+	$('#gameboard').append(`<div class="grid" id="${person.name}"><img class="profile" src="https://github.com/${person.githubUsername}.png?size=250" alt="Profile image of ${person.name}"></div>`)
 } // end loadImages
 
 // Random number function (provided)
@@ -40,5 +41,25 @@ function clickPhoto(){
 		alert("Try again!");
 	}
 } // end clickPhoto
+
+// Shuffle array
+function shuffleArray(array){
+	let currentIndex = array.length,  randomIndex;
+	// While there remain elements to shuffle...
+	while (0 !== currentIndex) {
+	  // Pick a remaining element...
+	  randomIndex = Math.floor(Math.random() * currentIndex);
+	  currentIndex--;
+	  // And swap it with the current element.
+	  [array[currentIndex], array[randomIndex]] = [
+		array[randomIndex], array[currentIndex]];
+	}
+	return array;
+}
+
+// Source for shuffleArray:
+// I used the Fisher-Yates shuffle and this function:
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+
 
 
