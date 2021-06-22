@@ -36,9 +36,9 @@ function randomPerson(){
 function clickPhoto(){
 	// comparing id name to random person
 	if(this.id === people[randNum].name){
-		alert("Nice job! You found me!");
+		swal("Congrats!", ", You found me!", "success");
 	} else {
-		alert("Try again!");
+		swal("Close!", ", Keep guessing!", "error");
 	}
 } // end clickPhoto
 
