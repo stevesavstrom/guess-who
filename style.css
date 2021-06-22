@@ -12,10 +12,6 @@ display: inline;
 padding: 3px;
 }
 
-.success {
-	opacity: 50%;
-}
-
 .guesswho{
 	width: 300px;
 	display: block;
